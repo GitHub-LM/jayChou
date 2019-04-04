@@ -2,7 +2,7 @@
   <Menu mode="horizontal" active-name="1">
     <img class="layout-logo" src="../images/logo.png" alt="jay">
     <MenuItem :name="item.id" v-for="item in menuList" :key="item.id" :to="item.path">
-    <Icon :type="item.icon" />
+    <!-- <Icon :type="item.icon" /> -->
     <span style="color:#fff">{{item.title}}</span>
     </MenuItem>
   </Menu>
@@ -59,5 +59,8 @@ export default {
   left: 0;
   left: -40px;
   top: 13px;
+}
+.ivu-menu-item:hover{
+  color: #fff;
 }
 </style>
